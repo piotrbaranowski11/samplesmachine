@@ -36,7 +36,7 @@ const Navbar = () => {
                </NavItem>
              </NavMenu>
              <NavBtn>
-              <NavBtnLink to="/booking">Booking</NavBtnLink>
+              <NavBtnLink to="/booking">Mutual Attraction Booking</NavBtnLink>
              </NavBtn>
             </NavbarContainer>
           </Nav>
