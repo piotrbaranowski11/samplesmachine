@@ -1,4 +1,4 @@
-# Getting Started with Samplesmachine
+#Samplesmachine + Landing Page by Mutual Attraction
 
 ### `npm start`
 
