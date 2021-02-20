@@ -1,4 +1,4 @@
-#Samplesmachine + Landing Page by Mutual Attraction
+###  Simple step sequencer + landing page by Mutual Attraction
 
 ### `npm start`
 
