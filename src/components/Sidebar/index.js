@@ -10,18 +10,18 @@ import {
     SidebarRoute
 } from './SidebarElements';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
     return (
-      <SidebarContainer>
-        <Icon>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="about">About</SidebarLink>
-            <SidebarLink to="discover">Discover</SidebarLink>
-            <SidebarLink to="releases">Releases</SidebarLink>
-            <SidebarLink to="gigs">Gigs</SidebarLink>
+            <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
+            <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
+            <SidebarLink to="releases" onClick={toggle}>Releases</SidebarLink>
+            <SidebarLink to="gigs" onClick={toggle}>Gigs</SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
             <SidebarRoute to="/booking">Mutual Attraction Booking</SidebarRoute>

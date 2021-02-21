@@ -14,9 +14,15 @@ export const SidebarContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
+<<<<<<< HEAD
     /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
      */
+=======
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
+    
+>>>>>>> 61236f46b4012c4bb33db86f989166f9a9819b07
      
 `;
 
