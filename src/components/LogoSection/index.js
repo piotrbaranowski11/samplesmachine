@@ -1,22 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Video from '../../videos/videos.mp4';
-import { LogoContainer, LogoBg, VideoBg } from './LogoElements'; 
+import { Button } from '../ButtonElement';
+import { 
+    LogoContainer, 
+    LogoBg, 
+    VideoBg, 
+    LogoContent, 
+    LogoH1, 
+    LogoP, 
+    LogoBtnWrapper, 
+    ArrowForward, 
+    ArrowRight
+} from './LogoElements'; 
 
 const LogoSection = () => {
+   const [hover, setHover] = useState(false)
+
+   const onHover = () => {
+       setHover(!hover)
+   }
+
     return (
       <LogoContainer>
         <LogoBg>
           <VideoBg autoPlay loop muted src={Video} type='videos/mp4'/>
         </LogoBg>
-         {/* <LogoContent>
+         <LogoContent>
           <LogoH1>SAMPLESMACHINE by MUTUAL ATTRACTION</LogoH1>
-          <LogoP>Make some beats with Mutual Attraction samples</LogoP>
+          <LogoP>Make your own beat with samples recorded by Mutual Attraction from his favorites instruments</LogoP>
           <LogoBtnWrapper>
-            <Button to="beats">
-              Get started and make some beats {hover ? <ArrowForward /> : ArrowRight />}
+            <Button to="beats" onMouseEnter={onHover} onMouseLeave={onHover}>
+              Get started and make some beats {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </LogoBtnWrapper>
-        </LogoContent>  */}
+        </LogoContent> 
       </LogoContainer>
     ) 
 }
