@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
           <Nav>
             <NavbarContainer>
-             <NavLogo to='/'>Samplesmachine</NavLogo>
+             <NavLogo to="/">Samplesmachine</NavLogo>
              <MobileIcon>
                <FaBars />
              </MobileIcon>
