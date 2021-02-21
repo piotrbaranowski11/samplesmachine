@@ -34,6 +34,9 @@ const Navbar = ({ toggle }) => {
                 <NavItem>
                  <NavLinks to="gigs">Gigs</NavLinks>
                </NavItem>
+               <NavItem>
+                 <NavLinks to="info">Info</NavLinks>
+               </NavItem>
              </NavMenu>
              <NavBtn>
               <NavBtnLink to="/booking">Mutual Attraction Booking</NavBtnLink>
