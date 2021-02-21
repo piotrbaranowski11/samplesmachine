@@ -10,7 +10,7 @@ export const LogoContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  /* z-index: 1; */
+  z-index: 1;
 `;
 
 export const LogoBg = styled.div`
@@ -24,10 +24,10 @@ export const LogoBg = styled.div`
   overflow: hidden;
 `;
 
-export const PictureBg = styled.image`
+export const VideoBg = styled.image`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* background: #232a34; */
+  background: #232a34;
 `
