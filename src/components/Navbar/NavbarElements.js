@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-   color: #fff;
+   color: #F8F6ED;
    justify-content: flex-start;
    cursor: pointer;
    font-size: 1.5rem;
@@ -52,7 +52,7 @@ export const MobileIcon = styled.div`
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #fff;
+      color: #F8F6ED;
    }
 `;
 
@@ -70,6 +70,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
    height: 80px;
+   color: #F8F6ED;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -110,7 +111,7 @@ export const NavBtnLink = styled(LinkR)`
 
    &:hover {
       transition: all 0.2s ease-in-out;
-      background: #fff;
+      background: #F8F6ED;
       color: #010606;
 
    }

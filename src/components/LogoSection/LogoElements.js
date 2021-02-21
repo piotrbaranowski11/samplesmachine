@@ -45,8 +45,8 @@ export const LogoContent = styled.div`
 `;
 
 export const LogoH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
+  color: #F8F6ED;
+  font-size: 60px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -60,8 +60,8 @@ export const LogoH1 = styled.h1`
 `;
 
 export const LogoP = styled.p`
-  margin-top: 24px;
-  color: #fff;
+  margin-top: 30px;
+  color: #F8F6ED;
   font-size: 24px;
   text-align: center;
   max-width: 600px;
@@ -78,7 +78,7 @@ export const LogoP = styled.p`
 `;
 
 export const LogoBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
