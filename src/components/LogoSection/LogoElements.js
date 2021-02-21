@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 export const LogoContainer = styled.div`
-  background: black;
+  background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +30,5 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
-`;
+`
+ 

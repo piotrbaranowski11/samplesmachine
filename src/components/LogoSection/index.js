@@ -8,7 +8,7 @@ const LogoSection = () => {
         <LogoBg>
           <VideoBg autoPlay loop muted src={Video} type='videos/mp4'/>
         </LogoBg>
-        {/* <LogoContent>
+         {/* <LogoContent>
           <LogoH1>SAMPLESMACHINE by MUTUAL ATTRACTION</LogoH1>
           <LogoP>Make some beats from Mutual Attraction gear samples</LogoP>
           <LogoBtnWrapper>
@@ -16,7 +16,7 @@ const LogoSection = () => {
               Get started and make some beats {hover ? <ArrowForward /> : ArrowRight />}
             </Button>
           </LogoBtnWrapper>
-        </LogoContent> */}
+        </LogoContent>  */}
       </LogoContainer>
     ) 
 }
