@@ -46,21 +46,21 @@ export const LogoContent = styled.div`
 
 export const LogoH1 = styled.h1`
   color: #F8F6ED;
-  font-size: 60px;
+  font-size: 55px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-      font-size: 40px;
+      font-size: 35px;
 
   }
 
   @media screen and (max-width: 480px) {
-      font-size: 32px;
+      font-size: 28px;
   }
 `;
 
 export const LogoP = styled.p`
-  margin-top: 30px;
+  margin-top: 27px;
   color: #F8F6ED;
   font-size: 24px;
   text-align: center;
