@@ -12,7 +12,7 @@ import {
   NavBtnLink
 } from './NavbarElements';
 
-const Navbar = ({ toggle }) => {
+const NavbarSection = ({ toggle }) => {
     return (
         <>
           <Nav>
@@ -48,4 +48,4 @@ const Navbar = ({ toggle }) => {
     )
 }
 
-export default Navbar
+export default NavbarSection

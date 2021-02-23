@@ -3,7 +3,7 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 
 
-export const LogoContainer = styled.div`
+export const AboutContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
@@ -12,9 +12,22 @@ export const LogoContainer = styled.div`
   height: 900px;
   position: relative;
   z-index: 1;
+
+
+ :before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0,2) 0%,
+      rgba(0,0,0,0,6)100%), linear-gradient(180deg, rgba(0,0,0,0,2) 0%, transparent 100%);
+      z-index: 2;
+  };
 `;
 
-export const LogoBg = styled.div`
+export const AboutBg = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -33,7 +46,7 @@ export const VideoBg = styled.video`
   background: #232a34;
 `;
 
-export const LogoContent = styled.div`
+export const AboutContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -44,11 +57,12 @@ export const LogoContent = styled.div`
 
 `;
 
-export const LogoH1 = styled.h1`
+export const AboutH1 = styled.text`
   color: #F8F6ED;
-  font-size: 60px;
+  font-size: 3.2rem;
   text-align: center;
-  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
+  /* font-family: 'Shadows Into Light', cursive; */
 
   @media screen and (max-width: 768px) {
       font-size: 35px;
@@ -60,10 +74,10 @@ export const LogoH1 = styled.h1`
   }
 `;
 
-export const LogoP = styled.p`
+export const AboutP = styled.p`
   margin-top: 27px;
   color: #F8F6ED;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   max-width: 600px;
 
@@ -78,7 +92,7 @@ export const LogoP = styled.p`
 
 `;
 
-export const LogoBtnWrapper = styled.div`
+export const AboutBtnWrapper = styled.div`
   margin-top: 35px;
   display: flex;
   flex-direction: column;
