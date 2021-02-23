@@ -6,7 +6,7 @@ export const DiscoverContainer = styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
- height: 700px;
+ height: 900px;
  z-index: 1;
 
 `;
@@ -19,7 +19,7 @@ export const DiscoverInfo = styled.text`
    border-radius: 5px;
    background: #55BB9A;
    white-space: nowrap;
-   padding: 30px 500px;
+   padding: 30px 840px;
    color: #010606;
    font-size:2.8rem;
 
