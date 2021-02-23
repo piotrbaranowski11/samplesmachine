@@ -46,7 +46,7 @@ export const LogoContent = styled.div`
 
 export const LogoH1 = styled.h1`
   color: #F8F6ED;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
 

@@ -27,7 +27,7 @@ const LogoSection = () => {
         </LogoBg>
          <LogoContent>
           <LogoH1>SAMPLESMACHINE by MUTUAL ATTRACTION</LogoH1>
-          <LogoP>Make your own beats with samples recorded by Mutual Attraction on his favorites instruments</LogoP>
+          <LogoP>Make your own beats with samples recorded by Mutual Attraction on his favorite instruments</LogoP>
           <LogoBtnWrapper>
             <Button to="beats" onMouseEnter={onHover} onMouseLeave={onHover}>
               Get started and make some beats {hover ? <ArrowForward /> : <ArrowRight />}
