@@ -46,8 +46,9 @@ export const LogoContent = styled.div`
 
 export const LogoH1 = styled.h1`
   color: #F8F6ED;
-  font-size: 55px;
+  font-size: 70px;
   text-align: center;
+  font-family: 'Shadows Into Light', cursive;
 
   @media screen and (max-width: 768px) {
       font-size: 35px;
@@ -62,7 +63,7 @@ export const LogoH1 = styled.h1`
 export const LogoP = styled.p`
   margin-top: 27px;
   color: #F8F6ED;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   max-width: 600px;
 
