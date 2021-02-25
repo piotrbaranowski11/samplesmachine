@@ -26,16 +26,13 @@ const NavbarSection = ({ toggle }) => {
                  <NavLinks to="about">About</NavLinks>
                </NavItem>
                 <NavItem>
-                 <NavLinks to="discover">Discover</NavLinks>
-               </NavItem>
-                <NavItem>
                  <NavLinks to="releases">Releases</NavLinks>
                </NavItem>
                 <NavItem>
                  <NavLinks to="gigs">Gigs</NavLinks>
                </NavItem>
                <NavItem>
-                 <NavLinks to="info">Info</NavLinks>
+                 <NavLinks to="shop">Shop</NavLinks>
                </NavItem>
              </NavMenu>
              <NavBtn>
