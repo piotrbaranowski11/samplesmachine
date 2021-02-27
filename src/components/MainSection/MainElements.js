@@ -5,8 +5,8 @@ export const MainContainer = styled.div`
   color: #F8F6ED;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#0c0c0c')};
 
-  /* @media screen and (max-width: 768px) {
-    padding: 100px 0; */
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
   }
 `;
 
@@ -64,9 +64,9 @@ export const Heading = styled.h1`
   font-weight: 400;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#0c0c0c')};
 
-  /* @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
-  } */
+  }
 `;
 
 export const Subtitle = styled.p`
