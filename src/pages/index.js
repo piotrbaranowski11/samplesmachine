@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
+import Footer from '../components/FooterSection';
 import SidebarSection from '../components/SidebarSection';
 import NavbarSection from '../components/NavbarSection';
 import HeaderSection from '../components/HeaderSection';
 import SamplerSection from '../components/SamplerSection';
+import MainSection from '../components/MainSection';
+import { homeObjOne } from '../components/MainSection/Data';
+
 
 
 
@@ -19,6 +23,8 @@ const Home = () => {
          <NavbarSection toggle={toggle}/>
          <HeaderSection />
          <SamplerSection />
+         <MainSection {...homeObjOne}/>
+         <Footer />
          
          
         </>
