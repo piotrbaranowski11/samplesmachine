@@ -22,7 +22,7 @@ const FooterSection = () => {
         <FooterContainer>
           <FooterWrap>
             <FooterLinksContainer>
-              <FooterLinksWrapper>
+              {/* <FooterLinksWrapper>
                 <FooterLinkItems>
                   <FooterLinkTitle>About Me</FooterLinkTitle>
                     <FooterLink to="/signin">LinkedIn</FooterLink>
@@ -59,7 +59,7 @@ const FooterSection = () => {
                     <FooterLink to="/signin">Spotify</FooterLink>
                     <FooterLink to="/signin">Discogs</FooterLink>
                 </FooterLinkItems>
-             </FooterLinksWrapper>
+             </FooterLinksWrapper> */}
             </FooterLinksContainer>
             <SocialMedia>
               <SocialMediaWrap>

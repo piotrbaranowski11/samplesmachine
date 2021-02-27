@@ -36,7 +36,7 @@ const NavbarSection = ({ toggle }) => {
                </NavItem>
              </NavMenu>
              <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">SIGN IN</NavBtnLink>
              </NavBtn>
             </NavbarContainer>
           </Nav>
