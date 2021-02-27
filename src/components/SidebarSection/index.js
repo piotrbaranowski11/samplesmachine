@@ -21,10 +21,10 @@ const SidebarSection = ({ isOpen, toggle }) => {
             <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
             <SidebarLink to="releases" onClick={toggle}>Releases</SidebarLink>
             <SidebarLink to="gigs" onClick={toggle}>Gigs</SidebarLink>
-            <SidebarLink to="shop" onClick={toggle}>Shop</SidebarLink>
+            <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/booking">Mutual Attraction Booking</SidebarRoute>
+            <SidebarRoute to="/signin">Sign In</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

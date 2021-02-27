@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
   position: relative;
   z-index: 1;
 
-  :::before {
+  /* ::before {
     content: '';
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@ export const HeaderContainer = styled.div`
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
     z-index: 2;
-  }
+  } */
 `;
 
 export const HeaderBg = styled.div`

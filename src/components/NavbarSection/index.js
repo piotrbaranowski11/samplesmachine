@@ -32,11 +32,11 @@ const NavbarSection = ({ toggle }) => {
                  <NavLinks to="gigs">Gigs</NavLinks>
                </NavItem>
                <NavItem>
-                 <NavLinks to="shop">Shop</NavLinks>
+                 <NavLinks to="signup">Sign Up</NavLinks>
                </NavItem>
              </NavMenu>
              <NavBtn>
-              <NavBtnLink to="/booking">Mutual Attraction Booking</NavBtnLink>
+              <NavBtnLink to="/signin">Sign In</NavBtnLink>
              </NavBtn>
             </NavbarContainer>
           </Nav>

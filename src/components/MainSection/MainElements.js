@@ -1,45 +1,60 @@
 import styled from 'styled-components';
+import {FaGithub} from 'react-icons/fa';
 
 export const MainContainer = styled.div`
-  background: #F8F6ED;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 900px;
-  position: absolute;
+  color: #fff;
+  background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+
+  /* @media screen and (max-width: 768px) {
+    padding: 100px 0; */
+  }
+`;
+
+export const MainWrapper = styled.div`
+  display: grid;
   z-index: 1;
-`;
-
-export const MainBg = styled.div`
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom; 0;
-  left: 100;
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-`;
-
-export const VideoBg = styled.video`
+  height: 860px;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
+
+export const MainRow = styled.div`
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1' col2'`)};
+
+  /* @media screen and (max-width: 768px) {
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+  } */
+
+`;
+
+export const Column1 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 600px;
+  max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-
 `;
 
 export const TopLine = styled.p`
-  color: #55BB9A;
-  font-size: 15px;
+  color: #01bf71;
+  font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -49,16 +64,41 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 3.2rem;
+  font-size: 48px;
   line-height: 1.1;
   font-weight: 400;
-  color: #0c0c0c;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+
+  /* @media screen and (max-width: 480px) {
+    font-size: 32px;
+  } */
 `;
 
 export const Subtitle = styled.p`
-  max-width: 500px;
+  max-width: 440px;
   margin-bottom: 35px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
-  color: #0c0c0c;
+  color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 400px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
+export const Giticon = styled(FaGithub)`
+  margin-left: 8px;
+  font-size: 25px;
+`
