@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const BPM = styled.input`
   padding: 0.75em 2em;
   outline: none;
-  background-color: white;
+  background-color: #F8F6ED;
   border: none;
   border-radius: 5px;
   color: #0c0c0c;
