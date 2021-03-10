@@ -34,7 +34,12 @@ const HeaderSection = () => {
             onMouseEnter={onHover} 
             onMouseLeave={onHover}
             primary="true"
-            dark="true">
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            >
              Get started and make some beats {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeaderBtnWrapper>

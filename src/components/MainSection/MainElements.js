@@ -3,7 +3,7 @@ import {FaGithub} from 'react-icons/fa';
 
 export const MainContainer = styled.div`
   color: #F8F6ED;
-  background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#0c0c0c')};
+  background: ${({lightBg}) => (lightBg ? '#F8F6ED' : '#0c0c0c')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 export const MainWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 900px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -74,12 +74,13 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText}) => (darkText ? '#0c0c0c' : '#fff')};
+  color: ${({darkText}) => (darkText ? '#0c0c0c' : '#F8F6ED')};
 `;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+  text-decoration: none;
 `;
 
 export const ImgWrap = styled.div`
@@ -96,4 +97,4 @@ export const Img = styled.img`
 export const Giticon = styled(FaGithub)`
   margin-left: 8px;
   font-size: 25px;
-`
+`;

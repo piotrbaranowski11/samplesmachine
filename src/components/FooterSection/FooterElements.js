@@ -90,7 +90,7 @@ export const SocialLogo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem,
-  dispaly: flex;
+  display: flex;
   align-items: center;
   margin-bottom: 16px;
   /* font-weight: bold; */

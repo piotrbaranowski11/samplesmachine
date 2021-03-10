@@ -1,30 +1,25 @@
 import React from 'react';
 import {
-    SamplerContainer,
-    SamplerInfo
-    // DrumMachineContainer,
-    // DrumMachineTransport,
-    // DrumMachineLogo,
-    // DrumMachineStepSequencer     
-} from './DrumMachineElements'
+  MainContainer,
+}  from './maincontainer';
+import PlayerProvider from './player-provider';
+import Sequencer from './sequencer';
+
 
 const SamplerSection = () => {
-    return (
-        <>
-         <SamplerContainer>
-         <SamplerInfo>COMING SOON</SamplerInfo>
-          {/* <DrumMachineContainer>
-            <DrumMachineTransport>
-              <DrumMachineLogo>
-                <DrumMachineStepSequencer>
-                  
-                </DrumMachineStepSequencer>
-              </DrumMachineLogo>
-            </DrumMachineTransport>
-          </DrumMachineContainer> */}
-        </SamplerContainer>
-       </> 
-    )
+  
+  return (
+    <MainContainer id='beats'>
+        <PlayerProvider>
+      {({ player }) => {
+        if (!player) {
+          return <p>loading....</p>;
+        }
+        return <Sequencer player={player} />;
+      }}
+       </PlayerProvider>
+    </MainContainer>
+  );
 }
 
-export default SamplerSection
+export default SamplerSection 
