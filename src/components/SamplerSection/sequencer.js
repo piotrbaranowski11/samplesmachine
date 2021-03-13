@@ -8,20 +8,20 @@ import * as Tone from "tone"
 
 
 
-const steps = 16;
+const steps = 32;
 const initialCellState = { triggered: false, activated: false };
 const lineMap = ["TR1", "TR2", "TR3", "TR4", "TR5", "TR6", "TR7", "TR8", "TR9"];
 const initialState = [
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState),
-  new Array(16).fill(initialCellState)
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState),
+  new Array(32).fill(initialCellState)
 ];
 
 
@@ -54,10 +54,25 @@ const Sequencer = ({ player }) => {
 
   useEffect(
     () => {
-      Tone.Transport.bpm.value = bpm;
+      console.log(bpm)
+      Tone.Transport.bpm.value = parseInt(bpm)
     },
     [bpm]
-  );
+    
+    );
+
+    useEffect(
+      () => {
+        if (playing) {
+          Tone.Transport.start();
+        } else {
+          Tone.Transport.stop();
+          setPlaying(0);
+        }
+      },
+      [playing]
+    );
+
 
   
   useEffect(() => {

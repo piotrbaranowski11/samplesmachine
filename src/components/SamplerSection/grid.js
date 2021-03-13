@@ -3,7 +3,7 @@ import Frame from "./frame";
 import Cell from "./cell";
 
 const Grid = ({ sequence, toggleStep }) => (
-  <Frame rows={10} columns={16}>
+  <Frame rows={10} columns={32}>
     {sequence.map((line, i) =>
       line.map((time, j) => (
         <Cell
