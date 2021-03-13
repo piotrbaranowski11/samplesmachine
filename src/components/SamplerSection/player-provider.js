@@ -13,9 +13,10 @@ const PlayerProvider = ({ children }) => {
         TR4: "/HAT2.wav",
         TR5: "/HAT3.wav",
         TR6: "/SNARE.wav",
-        TR7: "/CHORD1.wav",
-        TR8: "/CHORD2.wav",
-        TR9: "/BASS1.wav"
+        TR7: "/ARP.wav",
+        TR8: "/CHORDPAD.wav",
+        TR9: "/BASS1.wav",
+        TR10: "/PIANO.wav"
         
        
       },

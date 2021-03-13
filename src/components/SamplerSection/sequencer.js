@@ -10,7 +10,7 @@ import * as Tone from "tone"
 
 const steps = 32;
 const initialCellState = { triggered: false, activated: false };
-const lineMap = ["TR1", "TR2", "TR3", "TR4", "TR5", "TR6", "TR7", "TR8", "TR9"];
+const lineMap = ["TR1", "TR2", "TR3", "TR4", "TR5", "TR6", "TR7", "TR8", "TR9", "TR10"];
 const initialState = [
   new Array(32).fill(initialCellState),
   new Array(32).fill(initialCellState),
@@ -30,7 +30,7 @@ const Sequencer = ({ player }) => {
   const [sequence, setSequence] = useState(initialState);
   const [playing, setPlaying] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
-  const [bpm, bpmSelector] = useBPM(120);
+  const [bpm, bpmSelector] = useBPM(110);
 
   const toggleStep = (line, step) => {
     const sequenceCopy = [...sequence];
@@ -52,6 +52,8 @@ const Sequencer = ({ player }) => {
     setSequence(sequence);
   };
 
+  
+
   useEffect(
     () => {
       console.log(bpm)
@@ -67,15 +69,14 @@ const Sequencer = ({ player }) => {
           Tone.Transport.start();
         } else {
           Tone.Transport.stop();
-          setPlaying(0);
+          setCurrentStep(0);
         }
       },
       [playing]
     );
 
 
-  
-  useEffect(() => {
+ useEffect(() => {
     const timer = setTimeout(() => {
       if (playing) {
         setCurrentStep((currentStep + 1) % steps);
@@ -86,6 +87,8 @@ const Sequencer = ({ player }) => {
       clearTimeout(timer);
     };
   }, [currentStep, playing]);
+
+  
 
   return (
     <>
