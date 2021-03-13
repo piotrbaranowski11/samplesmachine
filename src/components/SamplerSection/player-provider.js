@@ -3,6 +3,7 @@ import * as Tone from "tone";
 
 const PlayerProvider = ({ children }) => {
   const [player, setPlayer] = useState(null);
+  
   useEffect(() => {
     const player = new Tone.Players (
       {
@@ -11,8 +12,11 @@ const PlayerProvider = ({ children }) => {
         TR3: "/HAT1.wav",
         TR4: "/HAT2.wav",
         TR5: "/HAT3.wav",
-        // TR6: "/SNARE.wav",
-        TR7: "/WOOD STAB.wav",
+        TR6: "/SNARE.wav",
+        TR7: "/CHORD1.wav",
+        TR8: "/CHORD2.wav",
+        TR9: "/BASS1.wav"
+        
        
       },
       () => {

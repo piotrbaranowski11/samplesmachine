@@ -10,7 +10,7 @@ import * as Tone from "tone"
 
 const steps = 16;
 const initialCellState = { triggered: false, activated: false };
-const lineMap = ["TR1", "TR2", "TR3", "TR4", "TR5", "TR6", "TR7"];
+const lineMap = ["TR1", "TR2", "TR3", "TR4", "TR5", "TR6", "TR7", "TR8", "TR9"];
 const initialState = [
   new Array(16).fill(initialCellState),
   new Array(16).fill(initialCellState),
@@ -20,6 +20,8 @@ const initialState = [
   new Array(16).fill(initialCellState),
   new Array(16).fill(initialCellState),
   new Array(16).fill(initialCellState),
+  new Array(16).fill(initialCellState),
+  new Array(16).fill(initialCellState)
 ];
 
 
@@ -28,13 +30,12 @@ const Sequencer = ({ player }) => {
   const [sequence, setSequence] = useState(initialState);
   const [playing, setPlaying] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
-  const [bpm, bpmSelector] = useBPM(65);
+  const [bpm, bpmSelector] = useBPM(120);
 
   const toggleStep = (line, step) => {
     const sequenceCopy = [...sequence];
     const { triggered, activated } = sequenceCopy[line][step];
     sequenceCopy[line][step] = { triggered, activated: !activated };
-    // console.log("toggled", line, step);
     setSequence(sequenceCopy);
   };
 
